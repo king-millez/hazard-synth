@@ -1,14 +1,22 @@
 const { Client } = require('discord.js');
 const { config } = require('dotenv');
+const fs = require('fs'); 
+
 const prefix = '>';
 const help = require(__dirname + "/msg/command/help.js");
 const memes = require(__dirname + "/msg/response/memes.js");
 
 //Function for loging text with a timestamp instead of using "console.log()"
 function botLog(input)
-{
+{   
     let date_ob = new Date();
-    console.log(date_ob.getHours() + ":" + date_ob.getMinutes() + ":" + date_ob.getSeconds() + "> " + input);
+    var mth = date_ob.getMonth() + 1;
+    var output = date_ob.getFullYear().toString().substr(-2) + ":" + mth + ":"  + date_ob.getDate() + " - " +  date_ob.getHours() + ":" +  date_ob.getMinutes() + ":" + date_ob.getSeconds() + "> " + input;
+    console.log(output);
+    fs.appendFile('bot.log', `${output}\n`, function(err)
+    {
+        if(err) throw err;
+    });
 }
 
 const client = new Client({
