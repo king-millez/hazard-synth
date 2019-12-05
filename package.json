@@ -1,0 +1,17 @@
+{
+  "name": "hazard-synth",
+  "version": "1.0.0",
+  "description": "A bot for the Hazard Time Discord Server, by Millez",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
