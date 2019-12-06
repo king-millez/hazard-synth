@@ -30,15 +30,16 @@ config({
 client.login(process.env.TOKEN);
 
 client.on("ready", () => {
-    botLog("Bot has logged in...");
+    botLog(`Bot has logged in as ${client.user.username}`);
 
+    const gameType = "PLAYING";
     client.user.setPresence({
         game: {
-            type: "WATCHING",
-            name: "You"
+            type: gameType,
+            name: "Half-Life: Alyx"
         }
     })
-    botLog("Set custom bot status...");
+    botLog(`Set custom bot status to ${gameType.charAt(0) + gameType.toLowerCase().substr(-(gameType.length - 1))} ${client.user.presence.game.name}`);
 });
 
 client.on("message", async message => {
