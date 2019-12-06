@@ -5,7 +5,7 @@ module.exports =
     checkMsg: function(message)
     {
         let args = message.content.substring(prefix.length).split(" ");
-        if(message.member.roles.has('468654045100507137') || message.member.roles.has('553737253470601227'))
+        if(message.member.roles.has('468654045100507137') || message.member.roles.has('553737253470601227') /*Restrict to Admins/Super Admins*/)
         {
             if(args[1] > 100 || !args[1])
             {
