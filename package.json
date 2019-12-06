@@ -4,6 +4,8 @@
   "description": "A bot for the Hazard Time Discord Server, by Millez",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0"
   },
