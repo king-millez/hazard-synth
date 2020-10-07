@@ -2,7 +2,7 @@
 This is a Discord Bot I'm working on for the Hazard Time Discord Server. Feel free to reuse any parts of its engine in your own bots!
 
     -   Millez
-        Discord: Miles#8551
+        Discord: Millez#8551
         Twitter: @king_millez
         GitHub: king-millez
 */
